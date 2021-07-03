@@ -20,10 +20,15 @@ html {
 body, button, input {
     font-size: clamp(14px, 1.6rem, 2vw); /*tela menor, tela padrão, tela maior*/
     
-    
     font-family: 'Open Sans', sans-serif;
     /* font-family: 'Raleway', sans-serif; */
-    background: var(--bg-main);
+
+    background-color: var(--bg-intro);
+    background-image: url("../assets/bg-curvy-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 35.2rem;
+
 }
 
 a {
