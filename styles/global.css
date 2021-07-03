@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-intro: #1c2431;
+    --bg-main: #181f2a;
+    --bg-footer: #0b1523;  
+    --bg-testmonial: #202a3c;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%; /* 10px */
+}
+
+body, button, input, textarea {
+    font-size: clamp(14px, 1.6rem, 2vw); /*tela menor, tela padrão, tela maior*/
+    
+    
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+    background: var(--bg-main);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+.sr-only {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+}
