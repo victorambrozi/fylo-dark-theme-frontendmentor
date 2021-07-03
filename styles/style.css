@@ -30,8 +30,9 @@
 
 /* ---- MAIN ---- */
 
+/* ---- INTRO ---- */
 .intro {
-    margin-top: 3.2rem;
+   margin-top: 3.2rem;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -70,5 +71,5 @@
 }
 
 .intro-content > .call-to-action a:hover {
-    filter: brightness(1.2)
+    filter: brightness(1.2);
 }
