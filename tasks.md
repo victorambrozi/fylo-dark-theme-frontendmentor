@@ -5,7 +5,7 @@
 # Estilo do header [✓]
 # Estilo do main []
     - intro [✓]
-    - services []
+    - services [✓]
     - productivity []
     - testimonials []
     - contact []
