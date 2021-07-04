@@ -72,3 +72,63 @@
 .intro-content > .call-to-action a:hover {
     filter: brightness(1.2);
 }
+
+/* ---- SERVICES ---- */
+
+.container-services {
+    padding-top: 12.8rem;
+    background: var(--bg-main);
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "access         security"
+        "collaboration  file"
+    ;
+
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.access {
+    grid-area: access;
+}
+
+.security {
+    grid-area: security;
+}
+
+.collaboration {
+    grid-area: collaboration;
+}
+
+.file {
+    grid-area: file;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card .card-content {
+    margin-top: 3.2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.card .card-content h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+}
+
+.card .card-content p {
+    margin-top: .8rem;
+    width: 62rem;
+}

@@ -1,0 +1,18 @@
+### Tarefas 
+
+# Inicio do projeto [✓]
+# Estrutura do html completa [✓]
+# Estilo do header [✓]
+# Estilo do main []
+    - intro [✓]
+    - services []
+    - productivity []
+    - testimonials []
+    - contact []
+# Estilo do  footer []
+# Responsividade []
+    - intro []
+    - services []
+    - productivity []
+    - testimonials []
+    - contact []
