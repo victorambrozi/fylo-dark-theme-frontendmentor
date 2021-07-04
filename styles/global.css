@@ -10,6 +10,9 @@
     --bg-main: #181f2a;
     --bg-footer: #0b1523;  
     --bg-testmonial: #202a3c;
+    --color-text: #fff;
+    --color-blue: #339ecc;
+    --color-cyan: #65e2d9;
 }
 
 html {
@@ -28,6 +31,8 @@ body, button, input {
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: 35.2rem;
+    color: var(--color-text); 
+
 
 }
 
