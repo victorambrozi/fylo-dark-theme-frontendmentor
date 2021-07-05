@@ -96,35 +96,35 @@
 }
 
 
-.access {
+.services .access {
     grid-area: access;
 }
 
-.security {
+.services .security {
     grid-area: security;
 }
 
-.collaboration {
+.services .collaboration {
     grid-area: collaboration;
 }
 
-.file {
+.services .file {
     grid-area: file;
 }
 
-.card {
+.services .card {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.card .card-content {
+.services .card .card-content {
     margin-top: 3.2rem;
     text-align: center;
 }
 
-.card .card-content h3 {
+.services .card .card-content h3 {
     font-family: 'Raleway', sans-serif;
 
     font-size: 2.2rem;
@@ -132,7 +132,7 @@
     line-height: 3.2rem;
 }
 
-.card .card-content p {
+.services .card .card-content p {
     margin-top: .8rem;
     width: 39.4rem;
 }
@@ -150,17 +150,20 @@
     grid-template-areas: 
         "image content"    
     ;
-    gap: 30px;
+    /* gap: 30px; */
 
     align-items: center;
 }
 
 .productivity > img {
     grid-area: image;
+    width: 100%;
 }
 
 .productivity-content {
     grid-area: content;
+    justify-self: end;
+    margin-left: 3rem;
 }
 
 .productivity-content h2 {
@@ -199,3 +202,79 @@
     margin-left: 1rem;
 }
 
+/* TESTIMONIALS */
+
+.container-testimonials {
+    padding-top: 12.8rem;
+    background: var(--bg-main);
+}
+
+.testimonitals {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "satish bruce boyd"    
+    ;
+
+    gap: 30px;
+    position: relative;
+}
+
+.quotes img{
+    position: absolute;
+    top: -1.8rem;
+    left: 1rem;
+}
+
+.testimonitals .satish {
+    grid-area: satish;
+    position: relative;
+}
+
+.testimonitals .bruce {
+    grid-area: bruce;
+}
+
+.testimonitals .boyd {
+    grid-area: boyd;
+}
+
+.testimonitals .card-testimonital {
+    padding: 3rem;
+    background: var(--bg-testmonial);
+    border-radius: .6rem;
+}
+
+.testimonitals .card-testimonital .testimonital {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+
+}
+
+.testimonitals .account {
+    margin-top: 3.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.testimonitals .account .avatar > img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.testimonitals .account .account-info {
+    margin-left: 3rem;
+}
+
+.testimonitals .account .account-info h3 {
+    font-size: 2rem;
+}
+
+.testimonitals .account .account-info span {
+    font-size: 1.4rem;
+
+}
