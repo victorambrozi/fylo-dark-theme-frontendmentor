@@ -58,20 +58,12 @@
     max-width: 45.3rem;
 }
 
-.intro-content > .call-to-action a {
+.intro-content > a  {
     margin: 1.6rem auto 0 auto;
+    text-align: center;
     display: block;
-    max-width: 20rem;
-    padding: 1.5rem;
-    background: linear-gradient(135deg, #65e2d9, #339ecc);
-    color: #fff;
     font-weight: 700;
-    border-radius: 3rem;
-    transition: .4s ease-in-out;
-}
-
-.intro-content > .call-to-action a:hover {
-    filter: brightness(1.2);
+    color: #fff;
 }
 
 /* ---- SERVICES ---- */
@@ -282,7 +274,7 @@
 .container-contact {
     grid-column: 1 / 4;
     margin: 0 auto;
-    padding: 3rem;
+    padding: 2rem;
     max-width: 86rem;
     background: var(--bg-contact);
     border-radius: .6rem ;
@@ -293,6 +285,37 @@
     bottom: -7.5rem;
 }
 
-.contact-content h2{
-    font-size: 2.4rem;
+.contact .contact-content h2 {
+    font-size: 2.9rem;
+    line-height: 3.9rem;
+    font-weight: 700;
+}
+
+.contact .contact-content p {
+    margin: 1.6rem auto 0 auto;
+    max-width: 70%;
+    font-size: 1.7rem;
+    line-height: 2.7rem;
+}
+
+.contact form {
+    margin-top: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact form input {
+    padding: 1.5rem;
+    width: 475px;
+    border-radius: 3rem;
+    background: #fff;
+    color: rgba(0, 0, 0, 1);
+    outline: none;
+}
+
+.contact form button {
+    margin-left: 3rem;
+    border-radius: 3rem;
+    font-weight: 700;
 }

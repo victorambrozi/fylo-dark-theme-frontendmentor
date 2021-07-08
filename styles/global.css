@@ -10,7 +10,7 @@
     --bg-main: #181f2a;
     --bg-footer: #0b1523;  
     --bg-testmonial: #202a3c;
-    --bg-contact: #141a24;
+    --bg-contact: #1C2230;
     --color-text: #fff;
     --color-blue: #339ecc;
     --color-cyan: #65e2d9;
@@ -67,4 +67,17 @@ img {
     padding:  0 2rem;
     width: 100%;
     max-width: 1440px;
+}
+
+.call-to-action {
+    background: linear-gradient(135deg, #65e2d9, #339ecc);
+    max-width: 20rem;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+
+.call-to-action:hover {
+    filter: brightness(1.2);
 }
