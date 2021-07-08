@@ -274,7 +274,7 @@
 .container-contact {
     grid-column: 1 / 4;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 3rem;
     max-width: 86rem;
     background: var(--bg-contact);
     border-radius: .6rem ;
@@ -282,7 +282,7 @@
     text-align: center;
     
     position: relative;
-    bottom: -7.5rem;
+    bottom: -11.5rem;
 }
 
 .contact .contact-content h2 {
@@ -299,7 +299,7 @@
 }
 
 .contact form {
-    margin-top: 3.2rem;
+    margin-top: 1.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -318,4 +318,10 @@
     margin-left: 3rem;
     border-radius: 3rem;
     font-weight: 700;
+}
+
+/* ---- FOOTER ---- */
+
+.container-footer {
+    margin-top: 12.8rem;
 }
