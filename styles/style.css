@@ -323,5 +323,76 @@
 /* ---- FOOTER ---- */
 
 .container-footer {
-    margin-top: 12.8rem;
+    margin-top: 25.6rem;
+}
+
+.footer-content {
+    margin-top: 3.2rem;
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    grid-template-areas: 
+        "location contact services terms social"
+    ;
+    
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: flex-end;
+
+    align-items: flex-start;
+}
+
+.footer-location {
+    grid-area: location;
+}
+
+.footer-location p {
+    margin-left: 1.6rem;
+}
+
+.footer-contact {
+    grid-area: contact;
+    flex-direction: column;
+
+}
+
+.footer-contact .footer-contact-items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-contact .phone p {
+    margin-left: 1.6rem;
+}
+
+.footer-contact .email {
+    margin-top: 1.6rem;
+}
+
+.footer-contact .email p {
+    margin-left: 1.6rem;
+}
+
+.footer-services {
+    grid-area: services;
+}
+
+.footer-terms {
+    grid-area: terms;
+}
+
+.social-media {
+    grid-area: social;
+}
+
+
+
+.social-media > a img{
+    width: 24px;
+    height: 24px;
 }
