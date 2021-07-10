@@ -32,6 +32,12 @@
 /* ---- MAIN ---- */
 
 /* ---- INTRO ---- */
+.container-intro {
+    background: url("../assets/bg-curvy-desktop.svg") no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
 .intro {
    display: flex;
    justify-content: center;
