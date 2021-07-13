@@ -8,24 +8,24 @@
     align-items: center;
 }
 
-.header ul {
+.menu {
     font-family: 'Raleway', sans-serif;
 
     display: flex;
     align-items: center;
 }
 
-.header ul li > a {
+.menu li > a {
     font-size: 1.8rem;
     transition: .4s ease-in-out;
     color: var(--color-text);
 }
 
-.header ul li > a:hover {
+.menu li > a:hover {
     border-bottom: .1rem solid #fff;
 }
 
-.header ul li + li {
+.menu li + li {
     margin-left: 1.5rem;
 }
 
