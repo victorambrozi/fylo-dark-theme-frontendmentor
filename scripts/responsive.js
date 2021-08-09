@@ -1,4 +1,4 @@
-const hamburguer = document.querySelector(".hamburguer");
+const hamburguer = document.querySelector('[data-responsive="hamburguer"]');
 
 const showMenu = () => {
     const menu = document.querySelector(".menu");
