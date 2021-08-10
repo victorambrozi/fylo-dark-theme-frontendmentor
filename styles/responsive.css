@@ -2,14 +2,12 @@
     .header {
         background: var(--bg-footer);
         transition: .5s ease-in-out;
-        /* transform: translate3d(0, -20px, 0) ; */
 
         padding: 2rem;
-        position: fixed;
     }
 
     .header a img {
-        transform: scale(.7);
+        transform: scale(.9);
         transition: .5s ease-in-out;
     }
 
@@ -18,7 +16,7 @@
         z-index: 999;
     }
 
-    .menu {
+    [data-anime="menu"] {
         position: fixed;
         top: 0;
         right: -100%;
@@ -35,18 +33,31 @@
         transition: .5s ease;
     }
 
-    .menu li {
+    [data-anime="menu"] li {
         margin-top: 50px;
         text-align: center;
     }
 
-    .menu li + li {
+    [data-anime="menu"] li + li {
         margin-left: 0;
         margin-top: 1.5rem;
     }
 
-    .menu.active {
+    [data-anime="menu"].active {
         right: 0;
     }
+
+    /* intro */
+/* 
+    .intro > img {
+        transform: scale(.9);
+        transition: .5s ease;
+
+        z-index: 2;
+    }
+    
+    .productivity > img {
+        min-width: 32rem;
+    } */
 
 }

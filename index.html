@@ -17,18 +17,19 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/styles/global.css">
     <link rel="stylesheet" href="/styles/style.css ">
+    <link rel="stylesheet" href="/styles/js-animation.css ">
     <link rel="stylesheet" href="/styles/responsive.css ">
 </head>
 
 <body>
     <header>
-        <div class="container header">
+        <div data-responsive="header" class="container header">
             <a href="#">
                 <img src="./assets/logo.svg" alt="Fylo">
             </a>
             <nav>
                 <div data-responsive="hamburguer"></div>
-                <ul class="menu">
+                <ul class="menu" data-anime="menu">
                     <li><a href="#">Features</a></li>
                     <li><a href="#">Team</a></li>
                     <li><a href="#">Sign In</a></li>
@@ -38,9 +39,9 @@
     </header>
 
     <main>
-        <section class="container-intro">
+        <section data-anime="show-down" class="container-intro">
             <div class="container intro">
-                <img src="/assets/illustrations/illustration-intro.png" alt="Fylo-Intro">
+                <img data-anime="image-intro" src="/assets/illustrations/illustration-intro.png" alt="Fylo-Intro">
 
                 <div class="intro-content">
                     <h2>All your files in one secure location, accessible anywhere.</h2>
@@ -48,12 +49,12 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam aspernatur magnam provident quo
                         vel ducimus, dicta delectus.</p>
 
-                    <a class="call-to-action"href="#">Get Started</a>
+                    <a class="call-to-action" href="#">Get Started</a>
                 </div>
             </div>
         </section>
 
-        <section class="container-services">
+        <section data-anime="show-right" class="container-services">
             <div class=" container services">
                 <div class="card access">
                     <div class="card-image">
@@ -105,7 +106,7 @@
             </div>
         </section>
 
-        <section class="container-productivity">
+        <section data-anime="show-down" class="container-productivity">
             <div class="container productivity">
                 <img src="./assets/illustrations/illustration-stay-productive.png" alt="Productive">
 
@@ -129,7 +130,7 @@
             </div>
         </section>
 
-        <section class="container-testimonials">
+        <section data-anime="show-right" class="container-testimonials">
             <div class="container testimonitals">
                 <div class="quotes">
                     <img src="./assets/cards/bg-quotes.png" alt="Quotes">
@@ -277,7 +278,7 @@
         </div>
     </footer>
 
-    <script src="/scripts/responsive.js"></script>
+    <script type="module" src="/scripts/script.js"></script>
 </body>
 
 </html>
