@@ -54,9 +54,29 @@
         transform: scale(.9);
         transition: .5s ease;
     }
+
+    /* productivity */
+
+    .productivity-content  {
+        margin-left: 0;
+    }
     
     .productivity > img {
         min-width: 32rem;
+    }
+
+    /* footer */
+
+    .footer-content {
+        grid-template-columns: 2fr repeat(3, 1fr);
+        grid-template-areas: 
+            "location contact services terms"
+            "social   social  social   social"
+        ;
+    }
+
+    .social-media{
+        justify-self: center;
     }
 
 }
@@ -68,9 +88,7 @@
             "security"
             "collaboration"  
             "file"
-        ;
-
-        
+        ;       
     }
     
     .productivity {
@@ -90,6 +108,11 @@
         display: block;
         min-width: 32rem;
     }
+
+    .testimonials .card-testimonial{
+        margin: 0 auto;
+        max-width: 90%;
+    }
     
     .testimonials .card-testimonial + .card-testimonial {
         margin-top: 3rem;
@@ -102,11 +125,55 @@
 
     .contact form input {
         width: 100%;
-        max-width: 34rem;
+        max-width: 70%;
     }
 
     .contact form button {
-        margin-top: 1.2rem;
+        margin-top: 1.6rem;
         margin-left: 0;
+    }
+
+    .footer-content {
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 580px){
+    .productivity > img {
+        padding: 1.6rem;
+    }
+
+    .contact form button {
+        width: 100%;
+        max-width: 70%;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "location"
+            "contact"
+            "services"
+            "terms"
+            "social"
+        ;
+    }
+
+    .footer-content {
+        margin-left: 0;
+    }
+
+    .footer-flex {
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .footer-flex + .footer-flex {
+        margin-top: 1.6rem;
+    }
+
+    .footer-location p {
+        width: 100%;
+        max-width: 70%;
     }
 }
