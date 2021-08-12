@@ -1,15 +1,18 @@
 [data-anime="show-down-menu"].active {
-    animation: show-down .3s alternate;
+    background: var(--bg-footer);
+    transition: .5s ease-in-out;
+
+    animation: show-down .3s forwards;
 
 }
 
 [data-anime="show-down"].active {
-    animation: show-down 3s alternate;
+    animation: show-down 1s forwards;
 
 }
 
 [data-anime="show-right"].active {
-    animation: show-right 3s forwards;
+    animation: show-right 1s forwards;
 }
 
 @keyframes show-down {
@@ -33,3 +36,8 @@
         transform: translate3d(0, 0, 0);
     }
 }
+
+/* Scroll */
+/* [data-scroll="scroll"].active {
+    animation: show-down 1s forwards;
+} */

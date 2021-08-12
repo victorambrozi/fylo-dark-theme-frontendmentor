@@ -34,13 +34,13 @@
 
 /* ---- INTRO ---- */
 .container-intro {
-    /* opacity: 0; */
     background: url("../assets/bg-curvy-desktop.svg") no-repeat;
     background-size: contain;
     background-position: bottom;
 }
 
 .intro {
+   opacity: 0;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -81,19 +81,20 @@
 /* ---- SERVICES ---- */
 
 .container-services {
-    opacity: 0;
+    /* opacity: 0; */
     padding-top: 12.8rem;
     background: var(--bg-main);    
 }
 
 .services {
+    opacity: 0;
     display: grid;
     justify-content: center;
     grid-template-areas: 
-        "access         security"
-        "collaboration  file"
+    "access         security"
+    "collaboration  file"
     ;
-
+    
     align-items: center;
     justify-content: space-around;
     gap: 3rem;
@@ -143,12 +144,14 @@
 
 /* PODUCTIVITY */
 .container-productivity {
-    opacity: 0;
+    /* opacity: 0; */
     padding-top: 12.8rem;
     background: var(--bg-main);
 }
 
 .productivity {
+    opacity: 0;
+
     display: grid;
     grid-template-areas: 
         "image content"    
@@ -209,12 +212,14 @@
 /* TESTIMONIALS */
 
 .container-testimonials {
-    opacity: 0;
+    /* opacity: 0; */
     padding-top: 12.8rem;
     background: var(--bg-main);
 }
 
 .testimonitals {
+    opacity: 0;
+
     display: grid;
     grid-template-areas: 
         "satish bruce boyd"    
