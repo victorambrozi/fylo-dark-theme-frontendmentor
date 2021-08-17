@@ -1,0 +1,420 @@
+/*---- HEADER ----*/
+.header {
+    margin: 0 auto;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+[data-anime="menu"] {
+    font-family: 'Raleway', sans-serif;
+
+    display: flex;
+    align-items: center;
+}
+
+[data-anime="menu"] li > a {
+    font-size: 1.8rem;
+    transition: .4s ease-in-out;
+    color: var(--color-text);
+}
+
+[data-anime="menu"] li > a:hover {
+    border-bottom: .1rem solid #fff;
+}
+
+[data-anime="menu"] li + li {
+    margin-left: 1.5rem;
+}
+
+/* ---- MAIN ---- */
+
+/* ---- INTRO ---- */
+.container-intro {
+    background: url("../assets/bg-curvy-desktop.svg") no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.intro {
+   opacity: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.intro > img {
+    padding: 30px 0 0;
+    transition: .5s ease;
+}
+
+.intro-content {
+    margin-top: 3.2rem;
+    text-align: center;
+}
+
+.intro-content h2 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+    font-size: clamp(20px, 5vw, 2.8rem);
+    line-height: 3.8rem;
+    max-width: 54rem;
+}
+
+.intro-content p {
+    margin: 1.6rem auto 0 auto;
+    font-size: 1.6rem;
+    max-width: 45.3rem;
+}
+
+.intro-content > a  {
+    margin: 1.6rem auto 0 auto;
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* ---- SERVICES ---- */
+
+.container-services {
+    padding-top: 12.8rem;
+    background: var(--bg-main);    
+}
+
+.services {
+    opacity: 0;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    "access         security"
+    "collaboration  file"
+    ;
+    
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+
+.services .access {
+    grid-area: access;
+}
+
+.services .security {
+    grid-area: security;
+}
+
+.services .collaboration {
+    grid-area: collaboration;
+}
+
+.services .file {
+    grid-area: file;
+}
+
+.services .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services .card .card-content {
+    margin-top: 3.2rem;
+    text-align: center;
+}
+
+.services .card .card-content h3 {
+    font-family: 'Raleway', sans-serif;
+
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+}
+
+.services .card .card-content p {
+    margin-top: .8rem;
+    width: 39.4rem;
+}
+
+/* PODUCTIVITY */
+.container-productivity {
+    /* opacity: 0; */
+    padding-top: 12.8rem;
+    background: var(--bg-main);
+}
+
+.productivity {
+    opacity: 0;
+
+    display: grid;
+    grid-template-areas: 
+        "image content"    
+    ;
+    gap: 3rem;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productivity > img {
+    grid-area: image;
+    width: 100%;
+}
+
+.productivity-content {
+    grid-area: content;
+    justify-self: end;
+    margin-left: 3rem;
+}
+
+.productivity-content h2 {
+    font-family: 'Raleway', sans-serif;
+
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+}
+
+.productivity-content p {
+    margin-top: 1.6rem;
+    max-width: 60.5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    list-style: 2.6rem;
+}
+.productivity-content .productivity-action  {
+    margin-top: 1.6rem;
+}
+
+.productivity-content .productivity-action a {
+    width: 17.5rem;
+    display: flex;
+    align-items: center;
+    color: var(--color-blue);
+    border-bottom: .1rem solid  var(--color-blue);
+    transition: .4s ease-in-out;
+}
+
+.productivity-content .productivity-action a:hover {
+    filter: brightness(1.4);
+}
+
+
+.productivity-content .productivity-action a > img {
+    margin-left: 1rem;
+}
+
+/* TESTIMONIALS */
+
+.container-testimonials {
+    /* opacity: 0; */
+    padding-top: 12.8rem;
+    background: var(--bg-main);
+}
+
+.testimonials {
+    opacity: 0;
+
+    display: grid;
+    grid-template-areas: 
+        "satish bruce boyd"    
+    ;
+
+    gap: 3rem;
+    position: relative;
+}
+
+.quotes img{
+    position: absolute;
+    top: -3.5rem;
+    left: 1rem;
+}
+
+.testimonials .satish {
+    grid-area: satish;
+    position: relative;
+}
+
+.testimonials .bruce {
+    grid-area: bruce;
+}
+
+.testimonials .boyd {
+    grid-area: boyd;
+}
+
+.testimonials .card-testimonial{
+    padding: 3rem;
+    background: var(--bg-testmonial);
+    border-radius: .6rem;
+}
+
+.testimonials .card-testimonial .testimonial{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+
+}
+
+.testimonials .account {
+    margin-top: 3.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.testimonials .account .avatar > img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.testimonials .account .account-info {
+    margin-left: 3rem;
+}
+
+.testimonial .account .account-info h3 {
+    font-size: 2rem;
+}
+
+.testimonials .account .account-info span {
+    font-size: 1.4rem;
+}
+
+/* FORM CONTACT */
+.container-contact {
+    grid-column: 1 / 4;
+    margin: 0 auto;
+    padding: 3rem;
+    max-width: 86rem;
+    background: var(--bg-contact);
+    border-radius: .6rem ;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .15);
+    text-align: center;
+    
+    position: relative;
+    bottom: -11.5rem;
+}
+
+.contact .contact-content h2 {
+    font-size: 2.9rem;
+    line-height: 3.9rem;
+    font-weight: 700;
+}
+
+.contact .contact-content p {
+    margin: 1.6rem auto 0 auto;
+    max-width: 70%;
+    font-size: 1.7rem;
+    line-height: 2.7rem;
+}
+
+.contact form {
+    margin-top: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact form input {
+    padding: 1.5rem;
+    width: 475px;
+    border-radius: 3rem;
+    background: #fff;
+    color: rgba(0, 0, 0, 1);
+    outline: none;
+}
+
+.contact form button {
+    margin-left: 3rem;
+    border-radius: 3rem;
+    font-weight: 700;
+}
+
+/* ---- FOOTER ---- */
+
+.container-footer {
+    margin-top: 25.6rem;
+}
+
+.footer-content {
+    margin-top: 3.2rem;
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    grid-template-areas: 
+        "location contact services terms social"
+    ;
+    
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.footer-content ul li {
+    display: flex;
+    align-items: center;
+}
+
+.footer-content ul li + li {
+    margin-top: 1.6rem;
+}
+
+.footer-content ul li a {
+    color: #fff;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: flex-end;
+
+    align-items: flex-start;
+}
+
+.footer-location {
+    grid-area: location;
+}
+
+.footer-location p {
+    margin-left: 1.6rem;
+}
+
+.footer-contact {
+    grid-area: contact;
+}
+
+.footer-contact ul li p {
+    margin-left: 1.6rem;
+}
+
+.footer-services {
+    grid-area: services;
+}
+
+.footer-terms {
+    grid-area: terms;
+}
+
+.social-media {
+    grid-area: social;
+}
+
+.social-media a {
+    padding: .7rem;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    color: #fff;
+}
+
+.social-media a + a {
+    margin-left: 1.6rem;
+}
+
+.social-media > a img{
+    width: 20px;
+    height: 20px;
+}
