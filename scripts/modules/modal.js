@@ -5,8 +5,11 @@ export default function initModal() {
 
 
     function toggleModal(event) {
+        const menu = document.querySelector('[data-anime="menu"]');
+
         event.preventDefault();
         containerModal.classList.toggle("active");
+        menu.classList.remove("active");
     }
 
     function externalClickModal(event) {
